@@ -1,16 +1,15 @@
 .container {
     padding: 10px;
     display: flex;
-    flex-direction: row;
-
+    /* flex-direction: column; */
     align-content: center;
 }
 .top {
-    background: blueviolet;
+    background-image: linear-gradient(blueviolet, blue);
     padding: 10px;
     width: 250px;
-    height: 250px;
-    
+    height: 400px;
+    border-radius: 30px;
 }
 .top h1 {
     color: white;
@@ -20,9 +19,22 @@
     color: white;
     text-align: center;
 }
+.top h4 {
+    color: whitesmoke;
+    text-align: center;
+}
 .top p {
     color: whitesmoke;
     text-align: center;
+}
+.circle {
+    background-image: linear-gradient(rgb(0, 0, 156), blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 6em; 
+    height: 6em;
 }
 
 .bottom {
@@ -30,25 +42,41 @@
     padding: 10px;
     width: 250px;
     height: 400px;
-
-    
 }
 
 .bottom div {
     color: navy;
-    border: 1px, solid navy;
     height: auto;
     width: auto;
-    padding: 10px;
-    gap: 100px;
+
+    gap: 50px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
 }
-.bottom div p {
-    text-align: stretch;
+
+.score {
+    text-align: end;
 }
+
+.reaction {
+    background-color: rgba(255, 186, 161, 0.801);
+    border-radius: 15px;
+}
+.memory {
+    background-color: rgba(255, 255, 177, 0.798);
+    border-radius: 15px;
+}
+.verbal {
+    background-color: rgba(212, 255, 212, 0.889);
+    border-radius: 15px;
+}
+.visual {
+    background-color: rgba(186, 212, 255, 0.808);
+    border-radius: 15px;
+}
+
 
 
 
@@ -59,9 +87,8 @@
         flex-wrap: wrap;
     }
 
-    .item {
-        background: wheat;
-        width: auto;
+    .top {
+        height: 250px;
     }
 }
 
@@ -69,10 +96,15 @@
     font-weight: bold;
 }
 .back {
-    
+
 }
 
 button {
     background: navy;
     color: whitesmoke;
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
 }
